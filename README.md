@@ -168,7 +168,6 @@ Tanpa JavaScript, web hanya berupa halaman statis seperti dokumen biasa. JS bisa
 ✔ **Jika ingin membuat backend, gunakan Node.js + Express.js**
 ✔ **Belajar step-by-step mulai dari dasar hingga framework!** 🚀
 
----
 
 Selanjutnya, kita bisa mulai dari **variabel & tipe data!** 💡
 
