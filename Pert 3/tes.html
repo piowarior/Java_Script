@@ -1,0 +1,61 @@
+<!-- <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotak dengan Border Radius</title>
+</head>
+<body>
+    <div id="kotak">Kotak</div>
+    <script>
+        // Membuat elemen kotak dengan JavaScript
+        var kotak = document.getElementById("kotak");
+        kotak.style.width = "200px";
+        kotak.style.height = "200px";
+        kotak.style.backgroundColor = "lightblue";
+        kotak.style.borderRadius = "10px";
+        kotak.style.display = "flex";
+        kotak.style.alignItems = "center";
+        kotak.style.justifyContent = "center";
+        kotak.style.fontSize = "18px";
+        kotak.style.fontFamily = "Arial, sans-serif";
+        kotak.style.boxShadow = "2px 2px 5px rgba(0, 0, 0, 0.2)";
+        
+        // Menambahkan event listener untuk mengubah warna kotak saat diklik
+        kotak.addEventListener("click", function() {
+            kotak.style.backgroundColor = kotak.style.backgroundColor === "lightblue" ? "lightcoral" : "lightblue";
+        });
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kotak dengan Border Radius</title>
+</head>
+<body>
+    <script>
+        var kotak = document.createElement("div");
+        Object.assign(kotak.style, {
+            width: "200px",
+            height: "200px",
+            backgroundColor: "lightblue",
+            borderRadius: "10px",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: "18px",
+            fontFamily: "Arial, sans-serif",
+            boxShadow: "2px 2px 5px rgba(0, 0, 0, 0.2)"
+        });
+        kotak.textContent = "Kotak";
+        kotak.addEventListener("click", () => {
+            kotak.style.backgroundColor = kotak.style.backgroundColor === "lightblue" ? "lightcoral" : "lightblue";
+        });
+        document.body.appendChild(kotak);
+    </script>
+</body>
+</html>
