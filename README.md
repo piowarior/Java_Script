@@ -168,10 +168,10 @@ Tanpa JavaScript, web hanya berupa halaman statis seperti dokumen biasa. JS bisa
 ✔ **Jika ingin membuat backend, gunakan Node.js + Express.js**
 ✔ **Belajar step-by-step mulai dari dasar hingga framework!** 🚀
 
----
 
 Selanjutnya, kita bisa mulai dari **variabel & tipe data!** 💡
 
+<<<<<<< HEAD
 # 🚀 Panduan Lengkap JavaScript untuk Pemula
 
 ## **1️⃣ Variabel (Menyimpan Data)**
@@ -622,4 +622,13 @@ console.log("Selesai");
 // Selesai
 // Async (karena setTimeout masuk ke event loop)
 ```
+=======
+---
+
+### 🎮
+<p align="center">
+  <img width="200px" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaWNsOWo3N3RpbHJ0cTl3cjE1NHg2ajhsbjlvamcwb29veTlwOXJ4aSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/11lxCeKo6cHkJy/giphy.gif">
+</p>
+
+>>>>>>> e5ba67ecad7220c2182e034efca06fba62c436fc
 
