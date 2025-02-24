@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Bintang</title>
+</head>
+<body>
+    <pre id="output"></pre>
+    
+    <script>
+        let output = "";
+        let rows = 7; // Jumlah baris bintang
+        
+        for (let i = 1; i <= rows; i++) {
+            output += "*".repeat(i) + "\n"; // Membuat pola bintang bertingkat
+        }
+        
+        document.getElementById("output").innerText = output;
+    </script>
+
+<pre>
+    <code>
+    function hello() {
+        console.log("Hello, World!");
+    }
+    </code>
+    </pre>
+
+    <pre>
+        |----|
+        | OO |  <- Gambar wajah ASCII
+        |----|
+    </pre>
+    
+</body>
+</html>
