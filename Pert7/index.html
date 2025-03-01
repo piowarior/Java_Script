@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan slide bergilir</title>
+    <style>
+        .kotak{
+            width: 400px;
+            height: 400px;
+            background-color: aqua;
+        }
+
+        button{
+            margin-top: 50px;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+        <div class="kotak" id="kotak"></div>
+
+        <button id="tombol" onclick=ganti()>tombol</button>
+        
+        <script>
+            function ganti (){
+               let box = document.getElementById("kotak")
+               if(box.style.backgroundColor != "red"){
+                box.style.backgroundColor = "blue";
+               }else if(box.style.backgroundColor = rgb(0, 0, 255)){
+                box.style.backgroundColor = "red";
+               }
+            }
+        </script>
+</body>
+</html>
