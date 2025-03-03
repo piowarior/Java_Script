@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Web Heboh Animasi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            overflow: hidden;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        #container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        #crazyText {
+            position: absolute;
+            font-size: 40px;
+            font-weight: bold;
+            animation: colorChange 1s infinite alternate;
+        }
+
+        @keyframes colorChange {
+            0% { color: red; }
+            50% { color: yellow; }
+            100% { color: cyan; }
+        }
+
+        .fallingBox {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: rgba(255, 255, 255, 0.7);
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+<div id="container">
+    <div id="crazyText">Web Heboh!</div>
+</div>
+
+<script>
+    // Animasi teks geser-geser
+    const text = document.getElementById('crazyText');
+    let posX = 100;
+    let posY = 100;
+    let speedX = 5;
+    let speedY = 5;
+
+    function moveText() {
+        posX += speedX;
+        posY += speedY;
+
+        if (posX <= 0 || posX + text.offsetWidth >= window.innerWidth) {
+            speedX *= -1; // Pantul kiri-kanan
+        }
+        if (posY <= 0 || posY + text.offsetHeight >= window.innerHeight) {
+            speedY *= -1; // Pantul atas-bawah
+        }
+
+        text.style.left = posX + 'px';
+        text.style.top = posY + 'px';
+    }
+
+    setInterval(moveText, 30);
+
+    // Animasi kotak jatuh dari atas
+    function createFallingBox() {
+        const box = document.createElement('div');
+        box.classList.add('fallingBox');
+        box.style.left = Math.random() * window.innerWidth + 'px';
+        box.style.top = '-50px';
+
+        document.getElementById('container').appendChild(box);
+
+        let fallSpeed = 2 + Math.random() * 5;
+
+        function fall() {
+            let top = parseFloat(box.style.top);
+            top += fallSpeed;
+            box.style.top = top + 'px';
+
+            if (top > window.innerHeight) {
+                box.remove();
+            } else {
+                requestAnimationFrame(fall);
+            }
+        }
+        fall();
+    }
+
+    setInterval(createFallingBox, 200);
+
+    // Background warna berkedip
+    function changeBackgroundColor() {
+        const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffffff'];
+        document.body.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    setInterval(changeBackgroundColor, 500);
+</script>
+
+</body>
+</html>
