@@ -11,6 +11,7 @@
 
 .gambar {
     width: 500px;
-    height: 300px;
-    object-fit: cover; /* Biar gambar rapi */
+    /* height: 300px; */
+    /* object-fit: cover; Biar gambar rapi */
+
 }
