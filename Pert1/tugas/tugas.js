@@ -24,16 +24,12 @@ function ganti(){
 
 let index = document.getElementById("dropdown")
 
-index.style.display = "none"
+// index.style.display = "none"
 
 // document.getElementById("menuButton")
 
 function keluar(){
 
-    if(index.style.display == "none"){
-        index.style.display = "block"
-    }else{
-        index.style.display = "none"
-        cl
-    }
+    index.classList.toggle("show")
 }
+
