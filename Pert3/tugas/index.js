@@ -70,7 +70,7 @@ for( i = 1 ; i <= 7 ; i++){
      x7 = i;
 }
 
-console.log(x7*("*"));
+// console.log(x7*("*"));
 
 // let x8 ;
 function rekursif(n) {
@@ -89,3 +89,17 @@ function faktorial(k) {
 }
 console.log(faktorial(5));
 
+
+let x10 = document.getElementById("kotak")
+
+function kotak() {
+    x10.style.borderRadius = "200px"
+}
+
+let x11 = document.getElementById("kotak")
+let x12 = document.getElementById("hero")
+
+function geser() {
+    x12.classList.add("geser")
+    // x11.classList.add("geser2")
+}
