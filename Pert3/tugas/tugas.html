@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .hero{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .main{
+            width: 500px;
+            height: 600px;
+            background-color: orange;
+            margin-top: 100px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 1.4px rgb(14, 11, 11);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            input{
+                width: 80%;
+                height: 30px;
+                border-radius: 5px;
+                border: none;
+                outline: none;
+                padding-left: 20px;
+                font-family: 'Courier New', Courier, monospace;
+            }
+        }
+        .main::before{
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: calc(100% + 5px);
+            height: calc(100% + 5px);
+            border-radius: 10px;
+            box-shadow: 0px 0px 0px 1.3px black;
+            background-color: rgb(165, 63, 63);
+            z-index: -1;
+
+        }
+        input.text2{
+            height: 50px;
+            width: 80%;
+            border-radius: 10px;
+            border: none;
+        }
+        .main h1{
+            font-family:'Courier New', Courier, monospace ;
+        }
+        .main img{
+            margin-top: -80px;
+        }
+        .main button{
+            width: 50%;
+            height: 40px;
+            background-color: rgb(28, 131, 131);
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="hero">
+        <div class="main">
+            <img src="/img/mjd traveler2.png" alt="">
+            <h1>LOGIN</h1>
+            <input type="text" placeholder="nama" class="masukkan">
+            <input type="password" placeholder="password" >
+            <input type="text" class="text2" placeholder="Deskripsi"  >
+            <button onclick=tombol()>SUBMIT</button>
+        </div>
+    </div>
+    
+    <script src="tugas.js"></script>
+</body>
+</html>
