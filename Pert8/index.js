@@ -1,11 +1,7 @@
 let arrayu = [3,4,5,6];
-let x = 1;
 
-
-arrayu.forEach(uhuy => {
-    console.log(uhuy);
-    console.log(x);
-    x += 1;
+arrayu.forEach((uhuy, juji) => {
+    console.log(uhuy, juji);
     
 });
 
@@ -17,3 +13,11 @@ arrayu.forEach(uhuy => {
 //     console.log(you);
     
 // }
+
+
+let x1 = ["a","b","c","d","e","f","g","h","i","j","k"]
+
+x1.forEach(lumba =>{
+    console.log(lumba);
+    
+})

@@ -18,17 +18,24 @@
 // });
 
 // module.exports = connection; // Ekspor koneksi supaya bisa dipakai di file lain
-
-let x1 = document.getElementsByClassName("masukkan")[0];
-
-let y = document.getel
+let x1 = document.querySelectorAll(".masukkan")
+let x2
+let x3 = document.getElementById("parg")
 
 function tombol(){
+    x2 = false
+    x1.forEach(lakukan=>{
+        if (lakukan.value == "") {
+            x2 = true
+        }
+    })
 
-    if (x1.value == "") {
-        console.log("kosong");
+    if (x2) {
+       x3.innerHTML = "Form Validasi Kamu Masih Kosong"
+       x3.style.color = "red"
     }else{
-        console.log("gak kosong");
-        
+        x3.innerHTML = ""
     }
+
+
 }
