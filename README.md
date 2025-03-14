@@ -2,7 +2,7 @@
 
 # 📌 Catatan Belajar JavaScript
 
-## 🚀 Apa Itu JavaScript?
+## 🚀 Apa Itu JavaScript untuk browser?
 JavaScript (JS) adalah bahasa pemrograman yang digunakan untuk membuat halaman web lebih **dinamis dan interaktif**.
 
 ✔ **HTML** → Struktur (Kerangka website)
