@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+        .kotak-utama{
+            display: flex;
+            background-color: aqua;
+            justify-content: end;
+            width: 100%;
+            height: 100%;
+        }
+        .kotak-main{
+            width: 1100px;
+            height: 100%;
+            border-radius: 10px 0 0 15px;
+            background-color: rgb(204, 35, 255);
+            display: flex;
+            align-items: end;
+            transition: all 1s;
+        }
+        .tombol1{
+            margin-right: 40px;
+            margin-top: 40px;
+            padding: 5px 10px;
+            position: absolute;
+        }
+        .kotak-main.pindah{
+            width: 100%;
+        }
+        .tombol2{
+            padding: 5px 90px;
+            margin-bottom: 40px;
+            margin-left: 30px;
+        }
+        .validasi{
+            width: 100%;
+            height: 100%;
+            background-color: bisque;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="kotak-utama" id="kotak-utama">
+        <div class="validasi">
+
+        </div>
+        <!-- <button class="tombol1" onclick="gerak()">Tombol</button> -->
+        <div class="kotak-main" id="kotak-main">
+            <button class="tombol2" onclick="gerak()">Registrasi</button>
+        </div>
+    </div>
+
+    
+    <script src="index.js"></script>
+</body>
+</html>
