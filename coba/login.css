@@ -15,6 +15,7 @@ body{
     
 }
 
+.registrasi,
 .login-utama{
     width: 50%;
     height: 100%;
@@ -25,6 +26,7 @@ body{
     transition: width 1s, opacity 0.3s;
 }
 
+.registrasi-utama,
 .login-utama-main{
     width: 500px;
     height: 600px;
@@ -32,12 +34,13 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(216, 50, 50);
     border-radius: 5px ;
     position: relative;
     box-shadow: 0px 0px 0px 1px black;
 }
 
+.registrasi-utama::before,
 .login-utama-main::before{
     content: "";
     position: absolute;
@@ -51,6 +54,7 @@ body{
     z-index: -1;
 }
 
+.registrasi-utama input,
 .login-utama-main input,
 .login-utama-main textarea{
     margin-top: 30px;
@@ -63,16 +67,17 @@ body{
     font-family: Poppins;
 }
 
-
 textarea.deskripsi{
     height: 80px;
 }
 
+.registrasi-utama img,
 .login-utama-main img{
     width: 500px;
     margin-top: -100px;
 }
 
+.registrasi-utama h1,
 .login-utama-main h1{
     margin: 0;
     font-family: Poppins;
@@ -87,6 +92,7 @@ textarea.deskripsi{
     align-items: center;
     justify-content: center;
     transition: all 1s;
+    display: none;
 }
 
 #registrasi,
@@ -99,9 +105,15 @@ textarea.deskripsi{
     transition: opacity 0.5s;
 }
 
-#registrasi2{
-    display: block;
+.registrasi2{
+    display: none;
 }
+
+/* 
+.registrasi-utama{
+    display: grid;
+    width: ;
+} */
 
 
 /* ................CLASS FOR ANIMATION JS................... */
@@ -128,14 +140,12 @@ textarea.deskripsi{
 }
 
 .registrasi2.pindah2-registrasi{
-    background-color: red;
+    opacity: 1;
     display: block;
     /* opacity: 1; */
 }
 
-.registrasi2.pindah2-registrasi2{
-    /* opacity: 1; */
-}
+
 /* @keyframes pindah-for-login-utama{
     0%{}
 } */

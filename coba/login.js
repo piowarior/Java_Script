@@ -18,4 +18,12 @@ function pindah() {
     
 }
 
+function pindah2() {
+    loginside.style.width= "100%"
+    loginside.addEventListener("transitionend", function() {
+        loginutama.classList.remove("pindah-login-utama1")
+        loginside.style.width= "50%"
+    })
+}
+
 
