@@ -1,7 +1,7 @@
 let loginside = document.getElementsByClassName("login-side")[0]
 let loginutama = document.querySelector(".login-utama")
 let tombolregistrasi = document.getElementById("registrasi")
-let tombolregistrasi2 = document.getElementById("registrasi2")
+let tombolregistrasi2 = document.getElementById("registrasi2-tombol")
 
 let ceklogin = 1
 function pindah() {

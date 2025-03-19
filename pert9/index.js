@@ -78,3 +78,13 @@ console.log(x3);
 x3.x4 = "mutoto"
 
 console.log(x3.x4);
+
+
+
+let object1 = {
+    nama : "yuji",
+    umur : "12",
+    alamat : "mustiak"
+}
+
+console.log(object1);

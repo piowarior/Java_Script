@@ -92,7 +92,7 @@ textarea.deskripsi{
     align-items: center;
     justify-content: center;
     transition: all 1s;
-    display: none;
+    /* display: none; */
 }
 
 #registrasi,
@@ -105,15 +105,14 @@ textarea.deskripsi{
     transition: opacity 0.5s;
 }
 
-.registrasi2{
+.registrasi2-tombol{
     display: none;
 }
 
-/* 
-.registrasi-utama{
-    display: grid;
-    width: ;
-} */
+
+.registrasi{
+    display: none;
+}
 
 
 /* ................CLASS FOR ANIMATION JS................... */

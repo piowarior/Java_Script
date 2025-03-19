@@ -1,0 +1,48 @@
+
+html body{
+    margin: 0;
+    padding: 0;
+    overscroll-behavior: none;
+}
+
+.hero{
+    width: 100vw;
+    height: 100vh;
+    background-color: red;
+    display: flex;
+}
+
+.halaman-login{
+    width: 50%;
+    height: 100%;
+    background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.halaman-registrasi{
+    width: 50%;
+    height: 100%;
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.halaman-login-utama,
+.halaman-registrasi-utama{
+    width: 500px;
+    height: 600px;
+    border-radius: 10px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+}
+
+.halaman-registrasi-utama input,
+.halaman-login-utama input{
+    width: 400px;
+    height: 40px;
+}

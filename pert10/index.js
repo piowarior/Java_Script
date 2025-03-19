@@ -4,8 +4,11 @@ let hasil = ""
 let hasil2 = ""
 for(let i= 1; i <= 7; i++){
     hasil += a;
-    for(let j = 7 ; j>= 7; j--){
-        hasil2 += b
+    for(let j = 1 ; j<= 7; j++){
+
+        if (j==1){
+            hasil2 += b
+        }
         
 
     }
