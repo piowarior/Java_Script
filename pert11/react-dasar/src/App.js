@@ -1,20 +1,13 @@
 
 import './App.css';
+import './global.css';
 
 function App() {
   return (
-    <div>
-      <div className="App">
-        <header className="App-header">
-          
-          <p>
-           test
-          </p>
-         
-        </header>
-      </div>
-        <h1>test1</h1>
+    <div className="jajal">
+      <h1 className="jajal2">hello word</h1>
     </div>
+    
   );
 }
 
