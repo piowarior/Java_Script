@@ -1,4 +1,4 @@
-const clientId = '7990e15b3adc4bf39081b9940c45aa25';  // Ganti dengan Client ID milikmu
+const clientId = '7990e15b3adc4bf39081b9940c45aa25';  // Ganti dengan Client ID 
 const redirectUri = 'http://localhost:5500/pert4/index.html';
 const authEndpoint = 'https://accounts.spotify.com/authorize';
 const scopes = [
