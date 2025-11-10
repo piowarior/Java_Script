@@ -1,0 +1,25 @@
+.jajal{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(54, 58, 57);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.jajal2{
+    color: tomato;
+    font-size: 100px;
+    -webkit-text-stroke: 1px white;
+}
+
+
+.wadah1{
+    width: 100vw;
+    height: 10vh;
+    background-color: skyblue;
+    color: yellow;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
