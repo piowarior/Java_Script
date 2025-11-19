@@ -15,3 +15,10 @@
     /* object-fit: cover; Biar gambar rapi */
 
 }
+
+
+
+.utama{
+    display: flex;
+    justify-content: center;
+}
