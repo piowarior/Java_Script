@@ -3,15 +3,18 @@ import React from 'react'
 const Navbar = () => {
   return (
     <nav className='flex justify-center mt-5'>
-      <div className="flex w-[1500px] h-[50px] justify-around border-1 rounded-[5px] items-center ">
+      <div className="flex w-[1400px] h-[50px] justify-between mt-[20px] items-center border-2 ">
+        <div className=" flex gap-5 ml-[80px]">
         <a href="/jajal"> Logo</a>
-        <h2 className='-ml-50' > MJD STORE</h2>
-        <input type="search" placeholder='search' className='border w-[300px] pl-2 rounded-[5px]'/>
-        <ul className='flex gap-5 '>
-            <li><a href="/about">about</a></li>
-            <li><a href="/services">services</a></li>
-            <li><a href="/contact">contact</a></li>
-        </ul>
+        <ul className='flex gap-12 text-[rgb(40, 41, 42)] '>
+            <li><a href="/home" className='fon'>Home</a></li>
+            <li><a href="/aboutus">About Us</a></li>
+            <li><a href="/contact">Project</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/contact">Contact</a></li>
+        </ul>  
+        </div>
+        <button className='mr-[55px] border-2 px-4 py-2 rounded-[50px] text-[14px] font-[600] tracking-wide'>Buy Teamplate</button>        
       </div>
     </nav>
   )
